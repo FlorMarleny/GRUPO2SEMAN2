@@ -31,3 +31,14 @@ do
             Console.WriteLine("Error de monto");
         }
     }
+    else
+    {
+        Console.WriteLine("Ingresar monto correcto positivo");
+    }
+
+    Console.WriteLine("¿Desea continuar? (si/no)");
+    continuar = Console.ReadLine().ToLower();
+
+} while (continuar != "no");
+
+Console.WriteLine("Gracias por usar el cajero");
