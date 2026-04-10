@@ -14,4 +14,4 @@ do
     if (monto > 0)
     {
         if (monto % 20 == 0)
-        {
+        { 
