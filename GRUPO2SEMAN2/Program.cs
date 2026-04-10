@@ -14,4 +14,20 @@ do
     if (monto > 0)
     {
         if (monto % 20 == 0)
-        { 
+        {
+            if (monto <= saldo)
+            {
+                saldo -= monto;
+                Console.WriteLine("Retiro exitoso");
+                Console.WriteLine("Saldo actual: " + saldo);
+            }
+            else
+            {
+                Console.WriteLine("Saldo insuficiente");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Error de monto");
+        }
+    }
